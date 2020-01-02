@@ -14,3 +14,5 @@ Print the minimum number of count to use the operation.
 
 # How to solve
 Solve using dynamic programming with backtracking
+
+problem : <https://www.acmicpc.net/problem/1463>
