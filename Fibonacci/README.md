@@ -1,4 +1,4 @@
-#Problem
+# Problem
 
 By using fibonacci function, make a program that print how many number of each 0,1 with given N
 
