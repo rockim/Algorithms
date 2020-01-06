@@ -1,17 +1,16 @@
 num = []
+summemo = []
 memostart = []
 def con_add(n):
-    print(n,"st")
     global num
     numsum = 0
     count = 0
     for i in range(n,len(num)):
-        if num[i] < 0 and count != 0:
-            numsum = numsum+max(con_add(i),0)
-            break
-        else:
-            numsum = numsum+num[i]
-        count += 1
+        # if num[i] < 0 and count != 0:
+        #     numsum = numsum+max(con_add(i),0)
+        #     break
+        # else:
+        numsum = numsum+num[i]
     return numsum
 def find_start():
     count = 0
@@ -28,25 +27,19 @@ def find_start():
 
 if __name__ == "__main__":
     n = int(input())
-    ns = input().split(' ')
+    ns = list(map(int,input().split()))
     if n == len(ns):
         for i in ns:
-            num.append(int(i))
+            num.append(i)
         if len(num)!=1:
             find_start()
-            print(memostart)
             answer=-1001
             if(len(memostart)==1 and num[0]<0):
                 num.sort()
                 answer = num.pop()
             else:
-                count = 0
                 for i in memostart:
-                    if( count == 0):
-                        answer = con_add(i)
-                    else:
-                        answer = max(answer,con_add(i))
-                    count+=1
+                    summemo.append(con_add(i))
             print(answer)
         else:
             print(num[0])
