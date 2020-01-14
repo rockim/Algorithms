@@ -29,7 +29,7 @@ I made 2'd array that is int triangle
 
 the above integer triangle in an array :
  
- tri = [[7],[3,8],[8,1,0],[2,7,4,4],[4,5,2,6,5]]
+> tri = [[7],[3,8],[8,1,0],[2,7,4,4],[4,5,2,6,5]]
 
 ex) tri[stair][num]  if stair = 1 num = 0 , 3
 
@@ -37,5 +37,5 @@ Use dynamic programing.
 
 if you choose i'stairs n number, 
 
-dp[i][n] = tri[i][n] + max(dp[i-1][n-1],dp[i-1][n]) ( i is not first number and last number)
+> dp[i][n] = tri[i][n] + max(dp[i-1][n-1],dp[i-1][n]) ( i is not first number and last number)
 
