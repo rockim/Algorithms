@@ -1,7 +1,7 @@
 # Problem
 Given N, give a triangle of integers of size N, as shown below:
 
-'
+
 
         7
         
@@ -13,7 +13,7 @@ Given N, give a triangle of integers of size N, as shown below:
      
     4  5  2  6  5
     
-'
+
 
 Starting at the top floor and going downstairs by choosing one of the numbers below, make program that print maximum sum of choosen numbers. the number on the downstair can only be selected from the diagonal left or diagonal right of the selected number on the current stair.
 
