@@ -16,7 +16,7 @@ From line 2 to line N, you are charged the cost of painting each house in red, g
 
 Print cost of minimum that painted all houses
 
-# how to solve
+# How to solve
 
 Using dynamic programing.
 
